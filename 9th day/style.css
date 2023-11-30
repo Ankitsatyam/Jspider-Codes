@@ -1,0 +1,28 @@
+a:link{
+    color: aqua;
+}
+
+a:visited{
+    color: rgba(165, 42, 42, 0.329);
+}
+
+a:hover{
+    font-size: 50px;
+    color: chocolate;
+}
+
+a:active{
+    color: crimson;
+}
+
+a:first-child{
+    color: cyan;
+}
+
+a:last-child{
+    color: darkolivegreen;
+}
+
+a:nth-child(3){
+    color: brown;
+}

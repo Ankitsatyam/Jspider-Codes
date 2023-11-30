@@ -1,0 +1,26 @@
+.container{
+    height: 600px;
+    width: 100%;
+    border: 10px solid ;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.box{
+    height: 400px;
+    width: 400px;
+    background-color: black;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2FYk98IWZrm9blphvTnZ3aK8DoGa1W66PjQ&usqp=CAU');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: top;
+    background-size: 400px 400px;
+    border: 1px solid black;
+}
+.box2{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu3oa6YiIxuPhEBjgWMyqFNlT6NYaWp60LCA&usqp=CAU');
+}
+.box3{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvpB-mgZY9wkcmMqxcPwNIveKb3JSZSvJxzg&usqp=CAU');
+}
