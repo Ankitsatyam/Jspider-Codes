@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #e7e4e4;
+}
+header {
+    background: var(--main-bg-color);
+    
+}
+
+nav {
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 10px;
+    background-color: #fff;
+    height: 75px;
+}
+.box{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.search{
+    width: 36rem;
+    position: relative;
+    display: flex;
+    gap: 5px;
+    background-color: #f0f5ff;
+    border-radius: 7px;
+}
+.input-div{
+    width: 100%;
+    border-radius: 7px;
+    margin-left: 5px;
+    background-color: #f0f5ff;
+}
+.input{
+    padding: 0.8rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.input::placeholder{
+    font-weight: 100;
+    font-size: 17px;
+}
+.div-icn{
+    background-color: transparent;
+    position: relative;
+    top: 6px;
+    left: 15px;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: 'Ubuntu', sans-serif;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.profile:hover{
+    background-color: blue;
+    border-radius: 7px;
+    color: white;
+}
+
+.cart1 {
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    cursor: pointer;
+}
+
+.seller{
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+.menu{
+    cursor: pointer;
+}
+.hide-btn{
+    display: none;
+}
+
+.hero{
+    width: 98%;
+    height:150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff;
+    margin-top: 8px;
+    margin-left: 15px;
+}
+.cart{
+    overflow: hidden;
+    width: 92%;
+    margin-left: 55px;
+    margin-top: 10px;
+    background-color: #fff;
+    margin-bottom: 15px;
+}
+.carts{
+    display: flex;
+    overflow: auto;    
+}
+.cart-items{
+    border: 2px solid rgb(211, 199, 199);
+    margin: 5px 10px;
+}
+
+.slider {
+    width: 80vw;
+    margin: 12px auto;
+    overflow: hidden;
+}
+
+.container {
+    min-height: calc(100vh - 58px - 12vh);
+    
+}
+
+footer {
+    height: 12vh;
+    background-color: var(--main-bg-color);
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+.flex-all-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(26, 25, 25);
+}
+
+.btn {
+    padding: 5px 10px;
+    color: white;
+    background: rgb(163, 163, 240);
+    border: 2px solid white;
+    border-radius: 7px;
+    cursor: pointer;
+    display: flex;
+}
+
+
+.my-1 {
+    margin: 5px 0;
+}
+
+.my-2 {
+    margin: 26px 15px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+.menu1 {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .hide-btn{
+        display: block;
+    }
+    .slider {
+        height: 23vh;
+    }
+
+    
+
+    .Search input {
+        margin: 12px 20px;
+    }
+
+    .cart{
+        margin: 10px 20px ;
+    }
+    .cart-item img {
+        width: 140px;
+    }
+
+    .box{
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    .search {
+        justify-content: center;
+        width: 60%;
+    }
+
+    .menu1 {
+        display: flex; 
+        cursor: pointer;
+        position: absolute;
+        top: 4px;
+        right: 128px;
+    }
+
+    .mobile-menu {
+        width: 60%;
+        display: flex;
+        padding: 20px 0px;
+        justify-content: space-between;
+    }
+    .profile1{
+        display: flex;
+        gap: 8px;
+    }
+    .cart2{
+        display: flex;
+        gap: 5px;
+    }
+    .seller1{
+        display: flex;
+        gap: 7px;
+    }
+    .profile{
+        display: none;
+    }
+    .cart1{
+        display: none;
+    }
+    .seller{
+        display: none;
+    }
+    .menu{
+        display: none;
+    }
+    .hero{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:850px){
+    .menu1{
+        right: 90px;
+    }
+}
+@media only screen and (max-width:550px){
+    .menu1{
+        right: 40px;
+    }
+}
